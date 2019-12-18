@@ -1,0 +1,485 @@
+{
+	"ot_request_id": "String",
+	"asset_id": "String",
+	"intakeRequestId":"String",
+	"extract_start_date": "String",
+	"extract_end_date": "String",
+	"brand_code": "String",
+	"state_code": "String",
+	"country_code": "String",
+	"snow_request_id":"String",
+	"snow_task_id": "String",
+	"personal_identifiers": {
+		"prefix": ["String"],
+		"first_name": ["String"],
+		"middle_name": ["String"],
+		"last_name": ["String"],
+		"suffix": ["String"],
+		"aliases": ["String"],
+		"addresses": [{
+			"type": "String",
+			"address_line_1": "String",
+			"address_line_2": "String",
+			"city": "String",
+			"county_or_province": "String",
+			"state": "String",
+			"zipcode": "String"
+		}],
+		"phones": [{
+			"phone_type": "String",
+			"phone_number": "String"
+		}],
+		"email_Address": [{
+			"email_type": "String",
+			"address": "String"
+		}]
+	},
+
+	"device_and_online_identifiers_and_related_information": [{
+		"online_identifier": "String",
+		"internet_protocol_address": "String",
+		"device_id": "String",
+		"serial_number": "String",
+		"device_calendar_information": "String",
+		"device_contact_information": "String",
+		"device_version_control": "String",
+		"device_os": "String",
+		"mobile_platform": "String",
+		"mobile_app_version": "String"
+	}],
+
+	"government_identifiers": {
+		"national_identification_number": [{
+			"identifier_name": "String",
+			"identifier_number": "String"
+		}],
+		"drivers_licenses": [{
+			"drivers_license_state": "String",
+			"drivers_license_country": "String",
+			"drivers_license_number": "String"
+		}],
+		"professional_licenses": [{
+			"professional_license_state": "String",
+			"professional_license_number": "String"
+		}],
+		"passports": [{
+			"passport_country": "String",
+			"passport_details": "String"
+		}],
+		"federal_program_details": [{
+			"federal_program_number": "String",
+			"federal_program_description": "String"
+		}],
+		"lien_details": [{
+			"lien_against_claimant": "String",
+			"lien_type_description": "String",
+			"lien_status": "String",
+			"lien_number": "String",
+			"lien_amount": "String"
+		}],
+		"alien_registration": ["String"]
+	},
+
+	"transaction_purchase_history": [{
+		"service_date": "String",
+		"service_description": "String",
+		"service_value": "String",
+		"service_location": "String"
+	}],
+
+	"employment_information": {
+		"employment": [{
+			"employer": "String",
+			"employment_type": "String",
+			"annual_household_income": "String",
+			"employment_status": "String",
+			"job_title": "String",
+			"employee_number": "String",
+			"employee_security_ID": "String",
+			"date_hired": "String",
+			"date_started_in_current_position": "String",
+			"wage_type": "String",
+			"wage_effective_date": "String",
+			"average_weekly_wage_method": "String",
+			"average_weekly_wage": "String",
+			"average_other_wage": "String",
+			"bonus_amount": "String",
+			"overtime_wage_amount": "String",
+			"amount_of_commission_earned": "String",
+			"amount_of_fringe_benefits": "String"
+
+		}],
+		"employment_history": [{
+			"job_title": "String",
+			"annual_household_income": "String",
+			"date_employment_terminated": "String",
+			"termination_type": "String",
+			"wage_type": "String"
+		}]
+	},
+
+	"education_information": [{
+		"education_level": "String",
+		"institution": "String",
+		"degree": "String"
+	}],
+
+	"individual_preferences_and_characteristics": {
+		"household_age_indicator": ["String"],
+		"designated_market_area_code": ["String"],
+		"estimated_income_identified": ["String"],
+		"number_of_persons_in_household": ["String"],
+		"number_of_cars": ["String"],
+		"college_education": ["String"],
+		"dwelling_type": ["String"],
+		"preferences": [{
+			"preference_type": "String",
+			"preference_description": "String"
+		}],
+		"characteristics": [{
+			"characteristics_type": "String",
+			"characteristics_description": "String"
+		}],
+		"psychological_trends": [{
+			"psychological_type": "String",
+			"psychological_description": "String"
+		}],
+		"predesipositions": [{
+			"predesipositions_type": "String",
+			"predesipositions_description": "String"
+		}],
+		"behavior": [{
+			"behavior_type": "String",
+			"behavior_description": "String"
+		}],
+		"attitudes": [{
+			"attitudes_type": "String",
+			"attitudes_description": "String"
+		}],
+		"intelligence": [{
+			"intelligence_type": "String",
+			"intelligence_description": "String"
+		}],
+		"abilities": [{
+			"abilities_type": "String",
+			"abilities_description": "String"
+		}],
+		"aptitudes": [{
+			"aptitudes_type": "String",
+			"aptitudes_description": "String"
+		}],
+		"personal_interests": [{
+			"personal_interests_type": "String",
+			"personal_interests_description": "String"
+		}]
+	},
+
+	"characteristics_of_protected_classifications_under_california_or_federal_law": {
+		"sex": ["String"],
+		"gender": ["String"],
+		"race": ["String"],
+		"religion": ["String"],
+		"color": ["String"],
+		"national_origin": ["String"],
+		"disability": ["String"],
+		"sexual_orientation": ["String"],
+		"marital_status": ["String"],
+		"familial_status": ["String"],
+		"medical_condition": ["String"],
+		"military_or_veteran_status": ["String"],
+		"ancestry": ["String"],
+		"nationality": ["String"],
+		"country_of_birth": ["String"],
+		"citizenship": ["String"],
+		"genetic_test_result": ["String"],
+		"age": ["String"]
+	},
+
+	"demographic_information": {
+		"age": ["String"],
+		"date_of_birth": ["String"],
+		"date_of_death": ["String"],
+		"claimant_death_caused_by_injury": ["String"],
+		"height": ["String"],
+		"weight": ["String"],
+		"tax_filing_status": ["String"],
+		"language_skills": [{
+			"language": "String"
+		}],
+		"number_of_children": ["String"],
+		"number_of_dependents": ["String"],
+		"household_income": ["String"]
+	},
+
+	"background_and_criminal_information": {
+		"background_check": [{
+			"background_check_description": "String",
+			"background_check_details": "String"
+		}]
+	},
+
+	"biometric_information": {
+		"voice_recording_xref": ["String"],
+		"fingerprint_xref": ["String"],
+		"face_xref": ["String"]
+	},
+
+	"location_information": [{
+		"gPS_latitude_and_longitude": "String"
+    }],
+
+	"audio_visual_and_other_sensory_information": {
+		"in_store_cameras_xref": ["String"],
+		"recordings_of_phone_calls_xref": ["String"]
+	},
+
+	"financial_information": {
+		"bank_details": [{
+			"bank_account_number": "String",
+			"bank_name": "String"
+		}],
+		"cc_details": [{
+			"credit_card_type": "String",
+			"credit_card_number": "String",
+			"card_expiry_date": "String",
+			"credit_card_CVV": "String",
+			"credit_card_issuer": "String"
+		}],
+		"debit_card_details": [{
+			"debit_card_type": "String",
+			"debit_card_number": "String",
+			"debit_card_expiry_date": "String",
+			"debit_card_CVV": "String",
+			"debit_card_issuing_bank": "String"
+		}],
+		"transaction_history": [{
+			"transaction": "String"
+		}],
+		"credit_history": [{
+			"credit_score": "String"
+		}]
+	},
+
+	"health_and_health_insurance_information": {
+		"alleged_cause_of_injury": ["String"],
+		"initial_treatment_code_description": ["String"],
+		"treatment": ["String"],
+		"sleep_data": ["String"],
+		"exercise_data": ["String"],
+		"drug_test_results": ["String"],
+		"family_health_or_morbidity_history": ["String"],
+		"diagnosis": ["String"],
+		"payments": ["String"],
+		"claims_data": ["String"],
+		"medical_images_xref": ["String"],
+		"prescription_number": ["String"],
+		"insurance_number": ["String"],
+		"is_medicare_eligible": ["String"],
+		"percent_disability": ["String"],
+		"injured_location": ["String"],
+		"injured_fingers_and_or_toes_location": ["String"],
+		"illness_type_description": ["String"],
+		"injury_type_description": ["String"],
+		"injury_severity": ["String"],
+		"prior_medical_condition": ["String"],
+		"nature_of_injury": ["String"],
+		"part_of_body_code_description": ["String"],
+		"therapies": ["String"],
+		"drugs": ["String"],
+		"medical_products_used": ["String"],
+		"does_claimant_want_their_name_excluded_from_the_OSHA_log": ["String"]
+	},
+	"internet_application_and_network_activity": {
+		"text_messages": [{
+			"date": "String",
+			"message": "String"
+		}],
+		"cookies": [{
+			"cookie_category": "String",
+			"cookie_name": "String",
+			"cookie_details": "String"
+		}],
+		"browse_and_search_history": [{
+			"site_url": "String",
+			"visit_date": "String",
+			"activity_category": "String",
+			"action_details": "String"
+		}],
+		"click_stream": [{
+			"click_stream_details": "String"
+		}],
+		"call_logs": [{
+			"phone_number": "String",
+			"call_duration": "String",
+			"call_xref": "String"
+		}]
+	},
+	"automobile_information": {
+		"vehicle_information": [{
+			"make_of_vehicle": "String",
+			"model_of_vehicle": "String",
+			"year_of_vehicle": "String",
+			"vehicle_VIN": "String",
+			"license_number": "String",
+			"license_state": "String",
+			"insurance_policy_number": "String"
+		}],
+		"trailer_details": [{
+			"trailer_number": "String",
+			"insurance_policy_number": "String"
+		}],
+		"tractor_details": [{
+			"tractor_number": "String",
+			"insurance_policy_number": "String"
+		}],
+		"dolly_details": [{
+			"dolly_number": "String",
+			"insurance_policy_number": "String"
+		}],
+		"forklift_details": [{
+			"forklift_number": "String",
+			"insurance_policy_number": "String"
+		}]
+	},
+
+	"insurance_claims_summary": [{
+		"claim_number": "String",
+		"total_paid_to_claimant": "String",
+		"line_of_business": "String",
+		"claim_type": "String",
+		"current_status_of_claim": "String",
+		"current_status_date": "String",
+		"date_claim_was_opened": "String",
+		"date_claim_was_closed": "String",
+		"date_claim_was_reopened": "String",
+		"closure_code_description": "String",
+		"date_of_the_decision": "String",
+		"date_of_denial": "String",
+		"denial_reason": "String",
+		"date_of_loss": "String",
+		"location_of_incident": {
+			"address": "String",
+			"city": "String",
+		"county": "String",
+		"state": "String",
+		"country": "String",
+		"zipcode": "String"
+		},
+		"phone_number_where_incident_occurred": "String",
+		"location_number": "String",
+		"date_reported": "String",
+		"settlement_date": "String",
+		"statute_of_limitations_for_claim": "String",
+		"initial_date_tendered": "String",
+		"tender_accepted_or_denied": "String",
+		"tendered_decision_date": "String",
+		"does_claimant_want_EFT": "String",
+		"EFT_bank_description": "String",
+		"EFT_routing_number": "String",
+		"EFT_account_number": "String",
+		"checking_or_savings_flag": "String",
+		"property_ID": "String",
+		"property_cost": "String",
+		"current_value_of_property": "String",
+		"replacement_value": "String",
+		"date_purchased": "String",
+		"type_of_property": "String",
+		"damage_type": "String",
+		"state_claim_number": "String",
+		"date_filed_with_the_state": "String",
+		"date_the_state_received_the_claim": "String",
+		"TLE_service_date": "String",
+		"work_order_ID": "String",
+		"settlement_amount": "String",
+		"post_injury_wage_amount": "String",
+		"adjusted_weekly_indemnity": "String",
+		"temporary_total_disability_compensation_rate": "String",
+		"permanent_partial_disability_compensation_rate": "String",
+		"daily_compensation_rate": "String",
+		"salary_continued": "String",
+		"wage_estimated": "String",
+		"board_or_lodging_included": "String",
+		"employer_paid_salary_in_lieu_of_compensation": "String",
+		"employer_paid_salary_prior_to_acquisition": "String",
+		"holiday_amount": "String",
+		"vacation_amount": "String",
+		"does_claimant_work_on_sunday": "String",
+		"does_claimant_work_on_monday": "String",
+		"does_claimant_work_on_tuesday": "String",
+		"does_claimant_work_on_wednesday": "String",
+		"does_claimant_work_on_thursday": "String",
+		"does_claimant_work_on_friday": "String",
+		"does_claimant_work_on_saturday": "String",
+		"work_week_type": "String",
+		"shift_code_description": "String",
+		"was_work_lost_or_restricted": "String",
+		"date_lost_or_restricted_begin_to_end": "String",
+		"is_vocational_rehabilitation_needed": "String",
+		"date_of_estimated_return": "String",
+		"maximum_medical_improvement_date": "String",
+		"voc_rehab_objective_goal": "String",
+		"voc_rehab_description": "String",
+		"voc_rehab_claim_number": "String",
+		"voc_rehab_planned_start_date": "String",
+		"voc_rehab_planned_end_date": "String",
+		"disability_date": "String",
+		"date_of_application": "String",
+		"initial_disability_date": "String",
+		"did_claimant_sign_a_medical_release_form": "String",
+		"initial_last_day_worked": "String",
+		"date_returned_to_work": "String",
+		"date_physicial_released_for_returning_to_work": "String",
+		"date_trauma_begins": "String",
+		"date_trauma_ends": "String",
+		"date_trauman_coverage_begins": "String",
+		"date_trauman_coverage_ends": "String",
+		"days_restricted_work": "String",
+		"percent_of_disability": "String",
+		"is_return_to_work_restricted": "String",
+		"returned_to_work_with_same_employer": "String",
+		"did_claimant_work_the_next_day": "String",
+		"denial_rescission_date": "String",
+		"was_surgery_required": "String",
+		"was_trauma_involved": "String",
+		"federal_claim_number": "String",
+		"date_of_initial_return_to_work": "String",
+		"date_of_last_day_worked": "String",
+		"max_medical_improvement_date": "String",
+		"date_medicate_treatment_was_sought": "String",
+		"date_medical_treatment_ended": "String",
+		"life_pension_flag": "String",
+		"life_medical_flag": "String",
+		"modified_work_available_flag": "String",
+		"pre_existing_condition_flag": "String",
+		"number_of_days_for_alternate_duty": "String",
+		"number_of_days_adjusted_alternate_duty": "String",
+		"estimated_alternate_duty_flag": "String",
+		"date_of_job_transfer": "String",
+		"days_worked_per_week": "String",
+		"average_number_of_weekly_hours_worked": "String",
+		"state_claimant_was_hired_in": "String",
+		"country_claimant_was_hired_in": "String",
+		"date_of_rehire": "String",
+		"is_claimant_an_employee": "String",
+		"is_claimant_employed": "String",
+		"were_wages_lost_due_to_claim": "String",
+		"wage_loss_verification": "String",
+		"total_lost_wages": "String",
+		"date_disability_began": "String",
+		"date_disability_ends": "String",
+		"number_of_lost_work_days": "String",
+		"job_class_title": "String",
+		"paid_on_date_of_loss": "String",
+		"exemptions_withheld": "String",
+		"number_of_entitled_exemptions": "String",
+		"employee_number": "String",
+		"employee_security_ID": "String"
+	}],
+	"catch_all": {
+		"other_data": [{
+			"data_description": "String",
+			"data_category": "String",
+			"data_details": "String"
+		}]
+	}
+}

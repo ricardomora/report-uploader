@@ -1,0 +1,11 @@
+{
+    "ot_request_id": "1",
+    "asset_id": "2",
+    "intakeRequestId":"3",
+    "extract_start_date": "4",
+    "extract_end_date": "5",
+    "brand_code": "6",
+    "state_code": "7",
+    "country_code": [],
+    "snow_request_id":"9"
+  }
