@@ -1,4 +1,6 @@
 const fs = require('fs');
+const validator = require('../utils/validator');
+const schema = require('../models/jsonschema');
 
 /**
  * GET /api/upload
@@ -17,9 +19,13 @@ exports.getFileUpload = (req, res) => {
 
 exports.postFileUpload = (req, res) => {
   let rawdata = fs.readFileSync(req.file.path);
-  let uploadedfile = JSON.parse(rawdata);
-  console.log(uploadedfile);
+  let uploadedfileContent = JSON.parse(rawdata);
 
-  req.flash('success', { msg: ":)" });
+  const result = validator(uploadedfileContent, schema);
+  if (result.valid) {
+    req.flash('success', { msg: ":) the file was uploded" });
+  } else {
+    req.flash('errors', { msg: `:( Something is wrong, \n\n ${result.errors}` });
+  }
   res.redirect('/api/upload');
 };
